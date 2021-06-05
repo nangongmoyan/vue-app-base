@@ -29,4 +29,16 @@
 
 # 安装 webpack 和 webpack-cli
 
+```
 npm i webpack webpack-cli -D
+```
+
+# 配置入口起点
+
+创建一个 webpack.config.js 文件
+
+```
+module.exports = {
+  entry: './src/main.js',
+};
+```
