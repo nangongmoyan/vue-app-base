@@ -42,3 +42,50 @@ module.exports = {
   entry: './src/main.js',
 };
 ```
+
+# 配置 output
+
+webpack.config.js
+
+```
+const path = require('path');
+
+module.exports = {
+  entry: './src/main.js',
+  output: {
+    filename: 'bundle.[hash:8].js',
+    path: path.join(__dirname, 'dist'),
+  },
+};
+```
+
+# 配置 mode
+
+webpack.config.js
+
+```
+const path = require('path');
+
+module.exports = {
+  entry: './src/main.js',
+  output: {
+    filename: 'bundle.[hash:8].js',
+    path: path.join(__dirname, 'dist'),
+  },
+  mode: 'production',
+};
+```
+
+# 样式文件处理
+
+### 安装
+
+```
+npm i style-loader less less-loader css-loader -D
+```
+
+```
+1.将 less 转换为 css
+2.解析 CSS 文件后，使用 import 加载，并且返回 CSS 代码
+3.将模块的导出作为样式添加到 DOM 中
+```
