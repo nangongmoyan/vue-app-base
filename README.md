@@ -85,9 +85,9 @@ npm i style-loader less less-loader css-loader -D
 ```
 
 ```
-- 将 less 转换为 css
-- 解析 CSS 文件后，使用 import 加载，并且返回 CSS 代码
-- 将模块的导出作为样式添加到 DOM 中
+1.将 less 转换为 css
+2.解析 CSS 文件后，使用 import 加载，并且返回 CSS 代码
+3.将模块的导出作为样式添加到 DOM 中
 ```
 
 ### 配置
@@ -685,9 +685,9 @@ package.json
 # ESLint
 
 ```
-- 最为主流的 JavaScript Lint 工具 监测 JS 代码质量
-- ESLint 很容易统一开发者的编码风格
-- ESLint 可以帮助开发者提升编码能力
+1.最为主流的 JavaScript Lint 工具 监测 JS 代码质量
+2.ESLint 很容易统一开发者的编码风格
+3.ESLint 可以帮助开发者提升编码能力
 ```
 
 ### 安装
